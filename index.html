@@ -10,8 +10,11 @@
   <!-- Header -->
   <header class="bg-white shadow-md p-4">
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-900">The Guide Room</h1>
-      <nav class="space-x-4">
+      <div class="flex items-center space-x-4">
+        <img src="logo.png" alt="The Guide Room Logo" class="h-10 w-10 rounded-full" />
+        <h1 class="text-2xl font-bold text-blue-900">The Guide Room</h1>
+      </div>
+      <nav class="space-x-4 hidden sm:block">
         <a href="#home" class="text-gray-700 hover:text-blue-700">Home</a>
         <a href="#courses" class="text-gray-700 hover:text-blue-700">Courses</a>
         <a href="#notes" class="text-gray-700 hover:text-blue-700">Notes</a>
@@ -76,14 +79,14 @@
 
   <!-- Login/Register Section -->
   <section id="login" class="py-12 bg-white">
-    <div class="container mx-auto text-center">
-      <h3 class="text-2xl font-semibold mb-4">Login / Register</h3>
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-6 text-center">Login / Register</h3>
       <div class="max-w-md mx-auto">
-        <form class="bg-gray-100 p-6 rounded-lg shadow-md">
-          <input type="text" placeholder="Username" class="w-full p-2 mb-4 border rounded" required />
-          <input type="password" placeholder="Password" class="w-full p-2 mb-4 border rounded" required />
-          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Login</button>
-          <p class="mt-4 text-sm">Don't have an account? <a href="#" class="text-blue-600 hover:underline">Register</a></p>
+        <form class="bg-gray-100 p-6 rounded-lg shadow-md space-y-4">
+          <input type="text" placeholder="Username" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+          <input type="password" placeholder="Password" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+          <button class="bg-blue-600 text-white px-4 py-2 rounded w-full hover:bg-blue-700">Login</button>
+          <p class="text-sm text-center">Don't have an account? <a href="#" class="text-blue-600 hover:underline">Register</a></p>
         </form>
       </div>
     </div>
